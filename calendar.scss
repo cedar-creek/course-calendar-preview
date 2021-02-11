@@ -1,0 +1,39 @@
+.calendar-view {
+  .fc-header-toolbar {
+    display: none;
+  }
+
+  .fc-event-title {
+    font-weight: bold;  
+  }
+
+  .fc-col-header-cell-cushion {
+    color: #212529;
+    font-weight: normal;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .fc-timegrid-col {
+    &:not(.fc-timegrid-axis) {
+      background: #eaebf0;
+    }
+  }
+}
+
+.calendar-title {
+  background: #667587;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.fc-list-day-side-text {
+  display: none;
+}
+.group-radio {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}

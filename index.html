@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='./node_modules/fullcalendar/main.min.css' rel='stylesheet' />
+    <link href='./calendar.min.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="group-radio">
+        <span class="mr-2 font-weight-bold">Group By </span>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input group-by-js" type="radio" name="inlineRadioOptions" id="teacherCheckbox" value="teacher" checked>
+          <label class="form-check-label" for="teacherCheckbox">Teacher</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input group-by-js" type="radio" name="inlineRadioOptions" id="scheldueCheckbox" value="scheldue">
+          <label class="form-check-label" for="scheldueCheckbox">Schedule</label>
+        </div>
+      </div>
+      <div>
+        <div class="calendar-title">Courtney Brown</div>
+        <div id="calendar-view1" class="calendar-view mb-5"></div>
+      </div>
+      
+      <div>
+        <div class="calendar-title">Kristen Douglas</div>
+        <div id="calendar-view2" class="calendar-view mb-5"></div>
+      </div>
+    </div>
+    
+  </body>
+  <script src='./node_modules/jquery/dist/jquery.min.js'></script>
+  <script src='./node_modules/fullcalendar/main.min.js'></script>
+  <script src='./calendar.js'></script>
+</html>
