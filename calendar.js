@@ -112,6 +112,11 @@ let calendarFuncs = (function() {
 
       if ($(this).val() == 'scheldue') {
         listView = 'listWeek';
+        $('.calendar-title.schedule').addClass('d-none');
+        $('.calendar-title.group-by').removeClass('d-none');
+      } else {
+        $('.calendar-title.schedule').removeClass('d-none');
+        $('.calendar-title.group-by').addClass('d-none');
       }
       for (var calendar of calendars) {
         calendar.changeView(listView);
